@@ -1,0 +1,9 @@
+Innehåll
+
+- katalog
+-- produkter
+--- kategori
+---- objekt
+- minneslista
+- kunder
+-- objekt

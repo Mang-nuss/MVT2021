@@ -7,3 +7,39 @@ Innehåll
 - minneslista
 - kunder
 -- objekt
+
+- Catalog - has-a - Product
+- Product - has-a - Category
+- Item - has-a - Category
+- Item - is-a - Product
+
+Kategorier:
+- Saxar
+- Trimmers
+- Matskålar
+- Pälsvårdsprodukter
+
+Properties (kategorier):
+- namn
+- id
+- husdjurskategori
+- kategori-typ (t.ex. typ av sax)
+
+Produkter:
+- Sax_modellnr1
+- Sax_modellnr2
+
+Properties (produkter):
+- namn
+- id
+- modellnr
+- pris
+- bild-referens
+- beskrivning
+
+Properties (minneslista):
+- namn
+- id
+- array-list
+- kundnr
+

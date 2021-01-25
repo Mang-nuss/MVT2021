@@ -20,6 +20,7 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="apache-tomcat-9.0" level="project" />
+<<<<<<< initiating_classes
     <orderEntry type="module-library">
       <library name="JUnit5.4">
         <CLASSES>
@@ -36,5 +37,8 @@
         <SOURCES />
       </library>
     </orderEntry>
+=======
+    <orderEntry type="library" name="@types/bootstrap" level="application" />
+>>>>>>> develop
   </component>
 </module>

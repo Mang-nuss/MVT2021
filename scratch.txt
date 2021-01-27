@@ -36,6 +36,8 @@ Properties (produkter):
 - pris
 - bild-referens
 - beskrivning
+- krav: 1) det ska gå att lägga till flera instanser av en produkt i katalogen, m allt identiskt utom id
+        2) i katalogen ska flera instanser lagras i en arrayList med id-nr, namngiven med modell-nr
 
 Properties (minneslista):
 - namn

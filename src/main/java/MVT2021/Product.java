@@ -10,8 +10,9 @@ public class Product {
     private String imgReference;
     private int category;
     private String description;
+    private Compartment compartment;
 
-    public Product(String name, String nr, int p, String imgRef, int cat, String descr) {
+    public Product(String name, String nr, int p, String imgRef, int cat, String descr, Catalog catalog) {
 
         productName = name;
         setProductId();
@@ -20,6 +21,9 @@ public class Product {
         imgReference = imgRef;
         category = cat;
         description = descr;
+
+        createCompartment(catalog);
+        enterCatalog(catalog);
     }
 
     public String getProductName() {
@@ -77,5 +81,21 @@ public class Product {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public void enterCatalog(Catalog catalog) {
+        compartment = catalog.getCompartmentByCompartmentId(this.getModelNr());
+        compartment.addItem(this);
+    }
+
+    public void createCompartment(Catalog catalog) {
+        boolean duplicate = false;
+        for(Compartment c : catalog.getCompartments()) {
+            if(c.getId() == this.getModelNr()) {
+                duplicate = true;
+            }
+        }
+
+        if(!duplicate) { compartment = new Compartment(this,catalog); }
     }
 }

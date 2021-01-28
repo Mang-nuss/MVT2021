@@ -1,7 +1,7 @@
 package domain.entities.shop;
 
-import MVT2021.Catalog;
-import MVT2021.Compartment;
+//import Catalog;
+//import Compartment;
 
 public class Product {
 
@@ -15,7 +15,7 @@ public class Product {
     private String description;
     private Compartment compartment;
 
-    public Product(String name, String nr, int p, String imgRef, int cat, String descr, MVT2021.Catalog catalog) {
+    public Product(String name, String nr, int p, String imgRef, int cat, String descr, Catalog catalog) {
 
         productName = name;
         setProductId();
@@ -86,7 +86,7 @@ public class Product {
         this.description = description;
     }
 
-    public void enterCatalog(MVT2021.Catalog catalog) {
+    public void enterCatalog(Catalog catalog) {
         compartment = catalog.getCompartmentByCompartmentId(this.getModelNr());
         compartment.addItem(this);
     }

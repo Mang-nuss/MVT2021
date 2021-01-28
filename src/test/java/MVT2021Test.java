@@ -1,10 +1,17 @@
-package MVT2021;
+/*import MVT2021.Catalog;
+import MVT2021.Compartment;
+import MVT2021.Product;*/
+//import
+//package
 
+import domain.entities.shop.*;
+//import domain.entities.shop.Product;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class MVT2021Test {
 

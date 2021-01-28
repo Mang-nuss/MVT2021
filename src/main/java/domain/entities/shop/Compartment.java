@@ -1,16 +1,13 @@
 package domain.entities.shop;
 
-import MVT2021.Catalog;
-import MVT2021.Product;
-
 import java.util.ArrayList;
 
 public class Compartment {
 
     private String id;
-    private ArrayList<MVT2021.Product> items = new ArrayList<MVT2021.Product>();
+    private ArrayList<Product> items = new ArrayList<Product>();
 
-    public Compartment(MVT2021.Product product, Catalog catalog) {
+    public Compartment(Product product, Catalog catalog) {
         String modelNr = product.getModelNr();
         id = modelNr;
 
@@ -25,11 +22,11 @@ public class Compartment {
         this.id = id;
     }
 
-    public ArrayList<MVT2021.Product> getItems() {
+    public ArrayList<Product> getItems() {
         return items;
     }
 
-    public void setItems(ArrayList<MVT2021.Product> items) {
+    public void setItems(ArrayList<Product> items) {
         this.items = items;
     }
 

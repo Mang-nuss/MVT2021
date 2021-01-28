@@ -1,7 +1,5 @@
 package domain.entities.shop;
 
-import MVT2021.Compartment;
-import MVT2021.Product;
 
 import java.util.ArrayList;
 

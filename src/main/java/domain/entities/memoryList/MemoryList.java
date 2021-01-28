@@ -1,8 +1,14 @@
 package domain.entities.memoryList;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 
+@Entity
 public class MemoryList {
-
-    private int Id;
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
+    public int Id;
     private String SelectedProducts;
 
     private String CustomerNumber;

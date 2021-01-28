@@ -1,7 +1,15 @@
 package domain.entities.customer;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import domain.entities.memoryList.*;
 
+@Entity
 public class Customer {
+    @Id
+    @GeneratedValue(strategy= GenerationType.AUTO)
     private int Id;
     private String UserName;
     private String Password;

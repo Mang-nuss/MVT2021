@@ -2,6 +2,7 @@ package domain.entities.customer;
 
 
 public class Customer {
+
     private int Id;
     private String UserName;
     private String Password;

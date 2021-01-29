@@ -1,11 +1,8 @@
-/*import MVT2021.Catalog;
-import MVT2021.Compartment;
-import MVT2021.Product;*/
-//import
-//package
+package mvt2021;
 
 import domain.entities.shop.*;
 //import domain.entities.shop.Product;
+import org.junit.Ignore;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
@@ -29,6 +26,7 @@ public class MVT2021Test {
     /**
      * When product is created, a catalog compartment is created
      */
+    @Ignore("Trying out the ignore tag") /*trying out this tag*/
     @Test
     void catalogCompartmentIsCreated() {
         product = new Product("Berner Sennen Shampoo",
